@@ -9,7 +9,11 @@ When the user shares one or more restaurant-rating-site links (OpenRice, Tabelog
 
 1. Extract restaurant name, address, phone, and URL from each link (best-guess if incomplete).
 2. Best-guess the tab (Office / Home / Others HK) from the address/area. Show the suggestion. Allow the user to correct it. Do not write yet.
-3. Best-guess price range (below 100 / 100-200 / 200+) and walking distance to Lee Garden One (Office) if relevant. Leave blank if unsure. Include in the preview.
+3. Best-guess price range (below 100 / 100-200 / 200+) and walking distance:
+   - Office tab: minutes walk to Lee Garden One (33 Hysan Ave, Causeway Bay).
+   - Home tab: minutes walk to Block 21, Richland Gardens, Kowloon Bay.
+   - Others HK: leave blank or N/A.
+   Leave blank if unsure. Include in the preview.
 4. For each item, ask the user to set “Have I Tried” (yes / like to / not again). The sheet column is a dropdown of these three values.
 5. If a restaurant already exists in the sheet, show the existing row and ask whether to update it or skip.
 6. Show a clear preview of the full proposed row(s) (batch or single). Wait for an explicit “add” / “confirm” / “yes” (or equivalent) before writing.
